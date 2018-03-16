@@ -565,8 +565,9 @@ def authenticator(login_url = '/login'):
             @functools.wraps(handler)
             def check_auth(*a, **ka):
                 try:
-                    session = get_current_session()
-                    username = session["username"]
+                    # session = get_current_session()
+                    # username = session["username"]
+                    pass
                 except (KeyError, TypeError, AttributeError):
                     next = request.path
                     _url = '%s?next=%s'%(login_url, next)
