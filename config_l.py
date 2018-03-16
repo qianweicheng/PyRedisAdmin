@@ -2,21 +2,21 @@ base = {
     'servers':[
               {'index':0,
                'name': 'server0', 
-              'host': 'redis-0.redis',
+              'host': '127.0.0.1',
               'port': 6379,
               'password': '',
               'databases':16
               },
               {'index':1,
                'name': 'server1', 
-              'host': 'redis-1.redis',
-              'port': 6379,
+              'host': '127.0.0.1',
+              'port': 6380,
               'databases':16
               },
               {'index':2,
                'name': 'server1', 
-              'host': 'redis-2.redis',
-              'port': 6379,
+              'host': '127.0.0.1',
+              'port': 6381,
               'databases':16
               },
           ],
@@ -26,7 +26,7 @@ base = {
 media_prefix = "pyred_media"
 
 host = '0.0.0.0'
-port = 80
+port = 8080
 debug = False
 
 scan_batch = 10000
